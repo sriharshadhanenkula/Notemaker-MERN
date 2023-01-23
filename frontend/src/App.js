@@ -12,10 +12,10 @@ const App = () => (
   <BrowserRouter>
     <Header />
     <main>
-      <Route exact path="/" component={LandingPage} />
-      <Route exact path="/login" component={LoginScreen} />
-      <Route exact path="/register" component={RegisterScreen} />
-      <Route path="/mynotes" component={MyNotes} />
+      <Route path="/" component={LandingPage} exact />
+      <Route path="/login" component={LoginScreen} exact />
+      <Route path="/register" component={RegisterScreen} exact />
+      <Route path="/mynotes" component={MyNotes} exact />
     </main>
     <Footer />
   </BrowserRouter>
